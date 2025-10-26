@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+
+
+@media (min-width: 500px) {
+  #tab {
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  #tab::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    bottom: 0;
+    transform-origin: left; 
+    transform: scaleX(0);
+    background-color: #3a393d88;
+    transition: transform .5s ease-in-out;
+    border-radius: inherit;
+  }
+  
+  #tab:hover::after {
+    transform: scaleX(1);
+    z-index: 0;
+  }
+}
+
+
+#content::-webkit-scrollbar {
+  background-color:transparent; /* medium gray thumb */
+  width: 8px;
+}
+
+#content::-webkit-scrollbar-thumb {
+  background:linear-gradient(to bottom, #5d5d5e, #080707); /* medium gray thumb */
+  border-radius: 40px;
+}
