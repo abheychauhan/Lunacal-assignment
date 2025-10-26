@@ -30,7 +30,7 @@ export default function TabsWidget() {
   }, [active]);
 
   return (
-    <section className="w-full h-full rounded-2xl md:p-6 shadow-neo bg-[#363c43] border border-black/40 relative flex p-2 gap-2">
+    <section className="w-full h-full rounded-2xl md:p-4 shadow-neo bg-[#363c43] border border-black/40 relative flex p-2 gap-2">
 
 
      <div className='flex flex-col gap-20'>

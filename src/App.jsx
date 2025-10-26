@@ -2,6 +2,7 @@ import React from 'react'
 import TabsWidget from './components/TabsWidget'
 import GalleryWidget from './components/GalleryWidget'
 import 'remixicon/fonts/remixicon.css'
+import GalleryCarousel from './components/GalleryCarousel'
 
 export default function App() {
 
