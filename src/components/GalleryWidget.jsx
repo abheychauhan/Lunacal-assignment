@@ -20,7 +20,6 @@ export default function GalleryWidget() {
 
   const [current, setCurrent] = useState(0);
 
-  // ✅ Updated logic so it can move regardless of number of images
   const nextSlide = () => {
     if (current < images.length - 3) setCurrent(current + 1);
     else setCurrent(0);
@@ -95,12 +94,12 @@ export default function GalleryWidget() {
             {images.map((imgObj) => (
               <div
                 key={imgObj.id}
-                className="w-1/6 flex-shrink-0 bg-[#1f2329] grayscale hover:grayscale-0 hover:scale-110 transition-all duration-1000 hover:shadow-2xl shadow-black/60 rounded-2xl overflow-hidden"
+                className="md:w-1/6 w-1/4 flex-shrink-0 bg-[#1f2329] grayscale hover:grayscale-0 hover:scale-110 transition-all duration-1000 hover:shadow-2xl shadow-black/60 rounded-2xl overflow-hidden"
               >
                 <img
                   src={imgObj.src}
                   alt="gallery item"
-                  className="w-full h-50 object-cover"
+                  className="w-full h-30 md:h-50 object-cover"
                 />
               </div>
             ))}
